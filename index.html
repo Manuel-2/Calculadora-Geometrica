@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Calculadora Geometrica</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <header class="header">
+        <h1 class="header-title">Calculadora Geometrica</h1>
+    </header>
+    <main class="main">
+        <section class="main-section">
+
+            <article class="main-card">
+
+                <div class="card-header">
+                    <h2 class="card-header-title">Cuadrado:</h2>
+                    <p class="card-header-info">Con esta herramineta podras calcular el perimetro y el area de un cuadrado</p>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="content-left">
+
+                        <form class="left-form-container" action="">
+                            <label for="squareInput">
+                                <p class="form-instruction">Ingresa la longitud de los lados del triangulo</p>
+                                <input class="form-input" type="number" id="squareInput">
+                            </label>
+                        </form>
+                        <img class="geometric-figure-img" src="http://www.calculararea.com/images/figCuadrado.png" alt="">
+                        <button class="calculate-button" onclick="hola()">Calcular area y perimetro</button>
+
+                    </div>
+
+                    <div class="content-right">
+                        <h4 class="content-right-title">Resultados</h4>
+                        <p class="text-result">Area: 999.999</p>
+                        <p class="text-result">Perimetro: 999.999</p>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+    </main>
     <script src="./code.js"></script>
 </body>
 </html>

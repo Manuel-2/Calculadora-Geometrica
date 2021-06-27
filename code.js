@@ -6,21 +6,22 @@
 
 //constantes
 const pi = Math.PI;
+
 const Perimetros = {
-    Cuadrado: (lado) => lado*4,
-    Rectangulo: (base,altura) => (base*2)+(altura*2),
-    Triangulo: (lado1,lado2,lado3) => lado1+lado2+lado3,
-    Circulo: (radio) => radio*2*pi,
+    Square: (side) => side*4,
+    Rectangle: (base,height) => (base*2)+(height*2),
+    Triangle: (side1,side2,side3) => side1+side2+side3,
+    Circle: (radius) => radius*2*pi,
 }
 const Areas = {
-    Cuadrado:(lado) => lado**2,
-    Rectangulo:(base,altura) => base*altura,
-    Triangulo:(base,altura) => (base*altura)/2,
-    Circulo:(radio) => (radio**2)*pi,
+    Square:(side) => side**2,
+    Rectangle:(base,height) => base*height,
+    Triangle:(base,height) => (base*height)/2,
+    Circle:(radius) => (radius**2)*pi,
 }
 
-let perimetro = Perimetros.Circulo(4);
-let area = Areas.Circulo(4);
+// --funcionamiento de la pagina--
 
-console.log(perimetro);
-console.log(area);
+//Calcular informacion del Cuadrado
+function useSquareInfo(){
+}
