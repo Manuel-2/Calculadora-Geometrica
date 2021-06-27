@@ -1,0 +1,73 @@
+:root {
+    --card-color: #fafafa;
+    --blue-color: rgb(35, 147, 212);
+}
+
+body {
+    /*background-color: rgb(255, 255, 255);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.card-item {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    padding: 1px 25px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-header {
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left {
+    border-right: solid gray 1px;
+    padding: 15px;
+    display: flex;
+}
+
+.geometric-figure-img {
+    display: block;
+    margin-right: 15px;
+}
+
+.left-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+}
+
+.content-right {
+    padding: 15px;
+}
+
+.calculate-button {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: var(--blue-color);
+    border-radius: 0px;
+    border: 0px solid rgb(41, 89, 138);
+    border-width: 0px 0px 4px 0px;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    font-size: initial;
+    font-family: Helvetica Neue;
+    font-weight: 900;
+    font-style: normal
+}

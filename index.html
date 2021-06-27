@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <header class="header">
         <h1 class="header-title">Calculadora Geometrica</h1>
@@ -15,32 +17,35 @@
     <main class="main">
         <section class="main-section">
 
-            <article class="main-card">
+            <article class="card-item">
 
                 <div class="card-header">
-                    <h2 class="card-header-title">Cuadrado:</h2>
-                    <p class="card-header-info">Con esta herramineta podras calcular el perimetro y el area de un cuadrado</p>
+                    <h2 class="card-header-title">Cuadrado</h2>
+                    <p class="card-header-info">Con esta herramineta podras calcular el perimetro y el area de un
+                        cuadrado</p>
+                    <hr>
                 </div>
 
                 <div class="card-content">
 
                     <div class="content-left">
 
-                        <form class="left-form-container" action="">
+                        <img class="geometric-figure-img" src="http://www.calculararea.com/images/figCuadrado.png"alt="">
+
+                        <form class="left-form-container" action="#">
                             <label for="squareInput">
                                 <p class="form-instruction">Ingresa la longitud de los lados del triangulo</p>
                                 <input class="form-input" type="number" id="squareInput">
                             </label>
+                            <button class="calculate-button" onclick="useSquareInfo()">Calcular area y perimetro</button>
                         </form>
-                        <img class="geometric-figure-img" src="http://www.calculararea.com/images/figCuadrado.png" alt="">
-                        <button class="calculate-button" onclick="hola()">Calcular area y perimetro</button>
 
                     </div>
 
                     <div class="content-right">
                         <h4 class="content-right-title">Resultados</h4>
-                        <p class="text-result">Area: 999.999</p>
-                        <p class="text-result">Perimetro: 999.999</p>
+                        <p id="squareAreaResult" class="text-result">Área:</p>
+                        <p id="squarePerimeterResult" class="text-result">Perimetro:</p>
                     </div>
 
                 </div>
@@ -51,4 +56,5 @@
     </main>
     <script src="./code.js"></script>
 </body>
+
 </html>

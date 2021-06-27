@@ -7,7 +7,7 @@
 //constantes
 const pi = Math.PI;
 
-const Perimetros = {
+const Perimeters = {
     Square: (side) => side*4,
     Rectangle: (base,height) => (base*2)+(height*2),
     Triangle: (side1,side2,side3) => side1+side2+side3,
@@ -24,4 +24,23 @@ const Areas = {
 
 //Calcular informacion del Cuadrado
 function useSquareInfo(){
+    //obtener la entrada
+    let sideInput = document.getElementById("squareInput").value;
+    //verificar errores
+    if(sideInput <= 0){
+        alert("eres un tonto >:) ,nadie nesesita calcular el area de 0 o de un numero negativo >:o")
+        return;
+    }
+    //hacer los calculos
+    let resultArea = Areas.Square(sideInput);
+    let resultPerimeter = Perimeters.Square(sideInput);
+
+    //finalmente mostrar los resultados
+    let outputArea = document.getElementById("squareAreaResult");
+    outputArea.innerText = `Área: ${resultArea}`;
+
+    let oputPerimeter = document.getElementById("squarePerimeterResult");
+    oputPerimeter.innerText = `Perimetro: ${resultPerimeter}`;
+
+    console.log(sideInput);
 }
