@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
                         <div class="squareInputs-container">
 
                             <label for="squareInput">
-                                <p class="form-instruction">Ingresa la longitud de los lados del triangulo</p>
+                                <p class="form-instruction">Ingresa la longitud de los lados del cuadrado</p>
                                 <input class="form-input-square" type="number" id="squareInput">
                             </label>
 
@@ -90,6 +90,37 @@
 
             </article>
 
+            <article class="card-item">
+
+                <div class="card-header">
+                    <h2 class="card-header-title">Circulo</h2>
+                    <p class="card-header-info">Para calcular el area y perimetro de un circulo solo ingresa su radio</p>
+                    <hr>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="content-left">
+                        <img class="geometric-figure-img" src="http://www.calculararea.com/images/figCirculo.png"alt="">
+
+                        <div class="circleInputs-container">
+
+                            <label for="circleInput">
+                                <p class="form-instruction">Ingresa el radio del circulo</p>
+                                <input class="form-input-circle" type="number" id="circleInput">
+                            </label>
+
+                            <button class="calculate-button" onclick="CircleResults()">Calcular area y perimetro</button>
+                        </div>
+                    </div>
+
+                    <div class="content-right">
+                        <h4 class="content-right-title">Resultados</h4>
+                        <p id="circleAreaResult" class="text-result">Área:</p>
+                        <p id="circlePerimeterResult" class="text-result">Perimetro:</p>
+                    </div>
+                </div>
+            </article>
 
 
         </section>

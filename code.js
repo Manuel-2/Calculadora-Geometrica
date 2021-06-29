@@ -1,6 +1,5 @@
 //calcular areas y perimetros de las sig figuras:
 //  - Cuadrados
-//  - Rectangulos
 //  - Triangulos
 //  - Circulos
 
@@ -31,7 +30,7 @@ const Areas = {
 //Calcular y mostrar informacion del Cuadrado
 function SquareResults(){
     //obtener la entrada
-    let sideInput = document.getElementById("squareInput").value;
+    let sideInput = parseInt(document.getElementById("squareInput").value);
     //verificar errores
     if(sideInput <= 0){
         inputNotValid();
@@ -73,6 +72,29 @@ function TriangleResults(){
 
     let oputPerimeter = document.getElementById("trianglePerimeterResult");
     oputPerimeter.innerText = `Perimetro: ${resultPerimeter}`;
+}
+
+//calcular y mostrar la informacion de los calculos del circulo
+function CircleResults(){
+    //obtener la entrada
+    let radio = parseInt(document.getElementById("circleInput").value);
+    //verificar errores
+    if(radio <= 0){
+        inputNotValid();
+        return;
+    }
+    //hacer los calculos
+    let resultArea = Areas.Circle(radio);
+    let resultPerimeter = Perimeters.Circle(radio);
+
+    //finalmente mostrar los resultados
+    let outputArea = document.getElementById("circleAreaResult");
+    outputArea.innerText = `Área: ${resultArea}`;
+
+    let oputPerimeter = document.getElementById("circlePerimeterResult");
+    oputPerimeter.innerText = `Perimetro: ${resultPerimeter}`;
+
+    console.log(radio);
 }
 
 

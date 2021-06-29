@@ -80,6 +80,15 @@ body {
     width: 75px;
 }
 
+.circleInputs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
 .content-right {
     padding: 15px;
 }
